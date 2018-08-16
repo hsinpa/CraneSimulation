@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835764e1284f04f44b584c21a0d72470, type: 3}
+  m_Name: Pillar_so
+  m_EditorClassIdentifier: 
+  touch_sound_clip: {fileID: 0}
+  _meter_modifier: 1.14
+  PillarPrefab: {fileID: 1046480483567300, guid: e50b6794bd34d4b978616838703d3ccb,
+    type: 2}
+  StripPrefab: {fileID: 1608381986921446, guid: 66aa64b379565462993b5c64c94efed4,
+    type: 2}
+  slight_collision_velocity: 0.2
+  strong_collision_velocity: 0.5

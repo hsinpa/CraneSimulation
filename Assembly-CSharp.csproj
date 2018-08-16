@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{2C1CA7F6-5439-6D9A-277B-813583D73AAA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_1_5;UNITY_2018_1;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_OSX;PLATFORM_STANDALONE;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;UNITY_TEAM_LICENSE;UNITY_POST_PROCESSING_STACK_V2;CROSS_PLATFORM_INPUT;AMPLIFY_SHADER_EDITOR</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\CraneSimulator\Script\CameraFollow.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\CameraTransition.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\ConstraintObject\BaseWorldTransform.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\ConstraintObject\CollisionReporter.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\ConstraintObject\NetWall.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\ConstraintObject\Pillar.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\ConstraintObject\PillarDetector.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\ConstraintObject\PillarSensor.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\ConstraintObject\ScritableObject\ConstraintObject.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\ConstraintObject\ScritableObject\NetWallObject.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\ConstraintObject\ScritableObject\PillarObject.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\CurveRoadEditor\Bezier.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\CurveRoadEditor\Examples\PathPlacer.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\CurveRoadEditor\Examples\RoadCreator.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\CurveRoadEditor\Path.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\CurveRoadEditor\PathCreator.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\MainGame\MainGameManager.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\ScoreSystem\ScoreBoardUI.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\ScoreSystem\ScoreManager.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\Utility\EventFlag.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\Utility\SimpleJSON.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\Utility\Singleton.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\Utility\StringTag.cs" />
+     <Compile Include="Assets\CraneSimulator\Script\Utility\UtilityMethod.cs" />
+     <Compile Include="Assets\Joe\Scripts\extension.cs" />
+     <Compile Include="Assets\Joe\Scripts\Move\move.cs" />
+     <Compile Include="Assets\Joe\Scripts\Move\NewBehaviourScript.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\BloomComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\FogComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\GrainComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\TaaComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\BloomModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\DitheringModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\FogModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\GrainModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\UserLutModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Models\VignetteModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingComponent.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingContext.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingModel.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\PostProcessingProfile.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+     <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+     <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+     <Compile Include="Assets\Rope\Rendering\ObiBaseFluidRenderer.cs" />
+     <Compile Include="Assets\Rope\Rendering\ObiDistanceFieldRenderer.cs" />
+     <Compile Include="Assets\Rope\Rendering\ObiParticleRenderer.cs" />
+     <Compile Include="Assets\Rope\Rendering\ShadowmapExposer.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\AutoMoveAndRotate.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\Blinker.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\CharacterControl2D.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\CharacterController\ObiCharacter.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\CharacterController\ObiCharacterController.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\ColliderHighlighter.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\CollisionEventHandler.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\CraneController.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\CursorController.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\FirstPersonLauncher.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\GrapplingHook.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\ObiActorTeleport.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\ObjectDragger.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\ObjectLimit.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\RobotArmController.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\RuntimeRopeGenerator.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\RuntimeRopeGeneratorUse.cs" />
+     <Compile Include="Assets\Rope\Sample Scenes\SampleResources\Scripts\SlowmoToggler.cs" />
+     <Compile Include="Assets\Rope\Scripts\Actors\ObiActor.cs" />
+     <Compile Include="Assets\Rope\Scripts\Actors\ObiBone.cs" />
+     <Compile Include="Assets\Rope\Scripts\Actors\ObiEmitter.cs" />
+     <Compile Include="Assets\Rope\Scripts\Actors\ObiRope.cs" />
+     <Compile Include="Assets\Rope\Scripts\Actors\ObiRopeRenderModes\ObiRopeChainRenderMode.cs" />
+     <Compile Include="Assets\Rope\Scripts\Actors\ObiRopeRenderModes\ObiRopeLineRenderMode.cs" />
+     <Compile Include="Assets\Rope\Scripts\Actors\ObiRopeRenderModes\ObiRopeMeshRenderMode.cs" />
+     <Compile Include="Assets\Rope\Scripts\Actors\ObiRopeRenderModes\ObiRopeRenderMode.cs" />
+     <Compile Include="Assets\Rope\Scripts\Actors\ObiRopeRenderModes\ObiRopeThickRenderMode.cs" />
+     <Compile Include="Assets\Rope\Scripts\Actors\ObiStitcher.cs" />
+     <Compile Include="Assets\Rope\Scripts\Attributes\ChildrenOnly.cs" />
+     <Compile Include="Assets\Rope\Scripts\Attributes\DisplayAs.cs" />
+     <Compile Include="Assets\Rope\Scripts\Attributes\Indent.cs" />
+     <Compile Include="Assets\Rope\Scripts\Attributes\InspectorButtonAttribute.cs" />
+     <Compile Include="Assets\Rope\Scripts\Attributes\MultiDelayed.cs" />
+     <Compile Include="Assets\Rope\Scripts\Attributes\MultiPropertyAttribute.cs" />
+     <Compile Include="Assets\Rope\Scripts\Attributes\MultiRange.cs" />
+     <Compile Include="Assets\Rope\Scripts\Attributes\SerializeProperty.cs" />
+     <Compile Include="Assets\Rope\Scripts\Attributes\VisibleIf.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ColliderTrackers\Trackers2D\ObiBoxShapeTracker2D.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ColliderTrackers\Trackers2D\ObiCapsuleShapeTracker2D.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ColliderTrackers\Trackers2D\ObiCircleShapeTracker2D.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ColliderTrackers\Trackers2D\ObiEdgeShapeTracker2D.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ColliderTrackers\Trackers3D\ObiBoxShapeTracker.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ColliderTrackers\Trackers3D\ObiCapsuleShapeTracker.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ColliderTrackers\Trackers3D\ObiDistanceFieldShapeTracker.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ColliderTrackers\Trackers3D\ObiMeshShapeTracker.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ColliderTrackers\Trackers3D\ObiShapeTracker.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ColliderTrackers\Trackers3D\ObiSphereShapeTracker.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ColliderTrackers\Trackers3D\ObiTerrainShapeTracker.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ObiCollider.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ObiCollider2D.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ObiColliderBase.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ObiCollisionMaterial.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ObiDistanceField.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ObiRigidbody.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ObiRigidbody2D.cs" />
+     <Compile Include="Assets\Rope\Scripts\Collisions\ObiRigidbodyBase.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ConstraintBatches\ObiAerodynamicConstraintBatch.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ConstraintBatches\ObiBendConstraintBatch.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ConstraintBatches\ObiConstraintBatch.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ConstraintBatches\ObiDistanceConstraintBatch.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ConstraintBatches\ObiPinConstraintBatch.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ConstraintBatches\ObiShapeMatchingConstraintBatch.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ConstraintBatches\ObiSkinConstraintBatch.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ConstraintBatches\ObiTetherConstraintBatch.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ConstraintBatches\ObiVolumeConstraintBatch.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ObiAerodynamicConstraints.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ObiBatchedConstraints.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ObiBendingConstraints.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ObiDistanceConstraints.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ObiPinConstraints.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ObiShapeMatchingConstraints.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ObiSkinConstraints.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ObiTetherConstraints.cs" />
+     <Compile Include="Assets\Rope\Scripts\Constraints\ObiVolumeConstraints.cs" />
+     <Compile Include="Assets\Rope\Scripts\Coroutines\CoroutineJob.cs" />
+     <Compile Include="Assets\Rope\Scripts\Coroutines\EditorCoroutine.cs" />
+     <Compile Include="Assets\Rope\Scripts\DataStructures\ObiList.cs" />
+     <Compile Include="Assets\Rope\Scripts\DataStructures\ObiParticleCache.cs" />
+     <Compile Include="Assets\Rope\Scripts\DataStructures\ObiRopeSection.cs" />
+     <Compile Include="Assets\Rope\Scripts\Emitter\ObiEmitterMaterial.cs" />
+     <Compile Include="Assets\Rope\Scripts\Emitter\ObiEmitterMaterialFluid.cs" />
+     <Compile Include="Assets\Rope\Scripts\Emitter\ObiEmitterMaterialGranular.cs" />
+     <Compile Include="Assets\Rope\Scripts\Emitter\ObiEmitterShape.cs" />
+     <Compile Include="Assets\Rope\Scripts\Oni.cs" />
+     <Compile Include="Assets\Rope\Scripts\Solver\IObiSolverClient.cs" />
+     <Compile Include="Assets\Rope\Scripts\Solver\ObiAnimatorController.cs" />
+     <Compile Include="Assets\Rope\Scripts\Solver\ObiArbiter.cs" />
+     <Compile Include="Assets\Rope\Scripts\Solver\ObiSolver.cs" />
+     <Compile Include="Assets\Rope\Scripts\Solver\ObiSolverData.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\Forces\ObiAmbientForceZone.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\Forces\ObiExternalForce.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\Forces\ObiSphericalForceZone.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\ObiBezierCurve.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\ObiCatmullRomCurve.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\ObiCurve.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\ObiKinematicVelocities.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\ObiParticleBaker.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\ObiParticleGridDebugger.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\ObiParticleHandle.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\ObiProfiler.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\ObiRopeCursor.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\ObiRopeHelper.cs" />
+     <Compile Include="Assets\Rope\Scripts\Utils\ObiUtils.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_GazeTracker.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_LaserPointer.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_Teleporter.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_TestThrow.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_TestTrackedCamera.cs" />
+     <Compile Include="Assets\SteamVR\Extras\SteamVR_TrackedController.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\BodyCollider.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\CircularDrive.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\ComplexThrowable.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\ControllerHoverHighlight.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\CustomEvents.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\DebugUI.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\DestroyOnDetachedFromHand.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\DestroyOnParticleSystemDeath.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\DestroyOnTriggerEnter.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\DistanceHaptics.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\DontDestroyOnLoad.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\EnumFlags.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\FallbackCameraController.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Hand.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\HapticRack.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\HideOnHandFocusLost.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\IgnoreHovering.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\InputModule.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Interactable.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\InteractableButtonEvents.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\InteractableHoverEvents.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\ItemPackage.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\ItemPackageReference.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\ItemPackageSpawner.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearAnimation.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearAnimator.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearAudioPitch.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearBlendshape.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearDisplacement.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearDrive.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\LinearMapping.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Player.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\PlaySound.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SeeThru.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SleepOnAwake.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SoundDeparent.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SoundPlayOneshot.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SpawnAndAttachAfterControllerIsTracking.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SpawnAndAttachToHand.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\SpawnRenderModel.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Throwable.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\UIElement.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Unparent.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\Util.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Core\Scripts\VelocityEstimator.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Hints\Scripts\ControllerButtonHints.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\ArcheryTarget.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\Arrow.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\ArrowHand.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\ArrowheadRotation.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\Balloon.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\BalloonColliders.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\BalloonHapticBump.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\BalloonSpawner.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\ExplosionWobble.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\FireSource.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\Longbow.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Longbow\Scripts\SoundBowClick.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Samples\Scripts\ControllerHintsExample.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Samples\Scripts\InteractableExample.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\AllowTeleportWhileAttachedToHand.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\ChaperoneInfo.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\IgnoreTeleportTrace.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\Teleport.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportArc.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportArea.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportMarkerBase.cs" />
+     <Compile Include="Assets\SteamVR\InteractionSystem\Teleport\Scripts\TeleportPoint.cs" />
+     <Compile Include="Assets\SteamVR\Plugins\openvr_api.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Camera.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_CameraFlip.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_CameraMask.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Controller.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_ControllerManager.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Ears.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Events.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_ExternalCamera.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Fade.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Frustum.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_GameView.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_IK.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_LoadLevel.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Menu.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Overlay.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_PlayArea.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Render.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_RenderModel.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Skybox.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_SphericalProjection.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Stats.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TestController.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedCamera.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_TrackedObject.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_UpdatePoses.cs" />
+     <Compile Include="Assets\SteamVR\Scripts\SteamVR_Utils.cs" />
+     <Compile Include="Assets\TirGamesAssets\PBRWorkShop\Models\PBRGarage\Scripts\GarageDoor.cs" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\FinalPass.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Waveform.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Uber.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Texture3DLerp.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\CopyStd.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Bloom.shader" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_Fade.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Fog.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\xRLib.hlsl" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\ParadeRender.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\LutGen.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\Switch.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVOUpsample.compute" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_ClearAll.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\PSSL.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\AutoExposure.shader" />
+     <None Include="Assets\SteamVR\InteractionSystem\Hints\Shaders\ControllerButtonHints.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Vectorscope.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\GaussianDownsample.compute" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
+     <None Include="Assets\PostProcessing\Utilities\CustomMotionTexture\Shaders\CustomMotionVectorTexture.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ACES.cginc" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ScreenSpaceReflections.hlsl" />
+     <None Include="Assets\Rope\Sample Scenes\Resources\ObiMaterials\ParticleShader.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DepthOfField.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DiscardAlpha.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Lut3DBaker.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Dithering.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Colors.hlsl" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Uber.shader" />
+     <None Include="Assets\Rope\Sample Scenes\Resources\ObiMaterials\ObiParticles.cginc" />
+     <None Include="Assets\SteamVR\InteractionSystem\Teleport\Shaders\Highlight.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\Vulkan.hlsl" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\GrainBaker.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ExposureHistogram.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\LightMeter.shader" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\D3D12.hlsl" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\OpenGL.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DiskKernels.hlsl" />
+     <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVODownsample2.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ScalableAO.hlsl" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\ACES.hlsl" />
+     <None Include="Assets\Rope\Plugins\libOni.bundle\Contents\Resources\CMakeLists.txt" />
+     <None Include="Assets\Rope\Sample Scenes\Resources\ObiMaterials\SimpleParticleShader.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVODownsample1.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\StdLib.hlsl" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVO.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DepthOfField.hlsl" />
+     <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+     <None Include="Assets\Rope\CHANGELOG_rope.txt" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\FastApproximateAntialiasing.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Fog.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MultiScaleVORender.compute" />
+     <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ScalableAO.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasing.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\MotionBlur.shader" />
+     <None Include="Assets\Rope\Sample Scenes\Resources\ObiMaterials\ObiUtils.cginc" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasing.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Texture2DLerp.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\DeferredFog.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
+     <None Include="Assets\Rope\Sample Scenes\Resources\ObiMaterials\LitParticles.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
+     <None Include="Assets\Rope\Sample Scenes\Resources\ObiMaterials\StandardVertexColors.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\D3D9.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Lut2DBaker.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\AutoExposure.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Overlays.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\Metal.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Distortion.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Vectorscope.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\TemporalAntialiasing.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\SubpixelMorphologicalAntialiasingBridge.hlsl" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ScreenSpaceReflections.shader" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_SphericalProjection.shader" />
+     <None Include="Assets\Rope\Sample Scenes\Resources\ObiMaterials\ObiEllipsoids.cginc" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_AlphaOut.shader" />
+     <None Include="Assets\PBS Materials Variety Pack\readme.txt" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\Copy.shader" />
+     <None Include="Assets\Rope\Sample Scenes\Resources\ObiMaterials\DistanceFieldSlice.shader" />
+     <None Include="Assets\SteamVR\readme.txt" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
+     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\Silhouette.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\D3D11.hlsl" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
+     <None Include="Assets\PostProcessing Profiles\ForVolumetricLights\Readme.txt" />
+     <None Include="Assets\SteamVR\Resources\SteamVR_ColorOut.shader" />
+     <None Include="Assets\SteamVR\InteractionSystem\Core\Shaders\SeeThru.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Waveform.shader" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\XboxOne.hlsl" />
+     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Sampling.hlsl" />
+     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\API\PSP2.hlsl" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Histogram.compute" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Debug\Histogram.shader" />
+     <None Include="Assets\TirGamesAssets\PBRWorkShop\ReadMePBRWorkshop.txt" />
+     <None Include="Assets\PostProcessing-2\PostProcessing\Shaders\Builtins\ExposureHistogram.compute" />
+     <None Include="Assets\SteamVR\InteractionSystem\Readme_InteractionSystem.txt" />
+ <Reference Include="UnityEditor.StandardEvents">
+ <HintPath>/Users/hsinpaul/OneDrive/Unity/CraneSimulator/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.PackageManagerUI.Editor">
+ <HintPath>/Users/hsinpaul/OneDrive/Unity/CraneSimulator/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AIModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ARModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AccessibilityModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AnimationModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AssetBundleModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.AudioModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.BaselibModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.BaselibModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClothModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CloudWebServicesModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CloudWebServicesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterInputModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ClusterRendererModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CoreModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.CrashReportingModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.DirectorModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.FacebookModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.FacebookModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GameCenterModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GridModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HotReloadModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.IMGUIModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ImageConversionModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.InputModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.JSONSerializeModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticleSystemModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ParticlesLegacyModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PerformanceReportingModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PhysicsModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Physics2DModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.ScreenCaptureModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SharedInternalsModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTrackingModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpatialTrackingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteMaskModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpriteShapeModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StyleSheetsModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SubstanceModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TLSModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TerrainPhysicsModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TextRenderingModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TilemapModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TimelineModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TimelineModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIElementsModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UNETModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UmbraModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityAnalyticsModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityConnectModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VRModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VehiclesModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VideoModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WebModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WebModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.WindModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.XRModule">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Locator">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/Managed/Unity.Locator.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Users/hsinpaul/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>/Users/hsinpaul/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@2.0.1/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>/Users/hsinpaul/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="mscorlib">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
+ </Reference>
+ <Reference Include="System">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Core">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Runtime.Serialization">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Runtime.Serialization.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Xml.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Xml.Linq">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/System.Xml.Linq.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/UnityScript.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityScript.Lang">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/UnityScript.Lang.dll</HintPath>
+ </Reference>
+ <Reference Include="Boo.Lang">
+ <HintPath>/Applications/Unity2018.1.5/Unity.app/Contents/MonoBleedingEdge/lib/mono/unity/Boo.Lang.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="com.unity.postprocessing.Editor.csproj">
+      <Project>{AB49B968-2606-2B5F-6C95-0387ACA059DC}</Project>      <Name>com.unity.postprocessing.Editor</Name>    </ProjectReference>
+    <ProjectReference Include="com.unity.postprocessing.Runtime.csproj">
+      <Project>{A4CCEEDB-E0B8-1FFF-7920-14477DCBEC2D}</Project>      <Name>com.unity.postprocessing.Runtime</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

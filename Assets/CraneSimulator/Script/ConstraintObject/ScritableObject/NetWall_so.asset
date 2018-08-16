@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848d57122e23b48e9816a7a0de2b0df2, type: 3}
+  m_Name: NetWall_so
+  m_EditorClassIdentifier: 
+  touch_sound_clip: {fileID: 0}
+  _meter_modifier: 1.14
+  NetWallPrefab: {fileID: 1659101162769212, guid: 126731e67616d4b65940d6aa15b91c33,
+    type: 2}
+  slight_collision_velocity: 0.2
+  strong_collision_velocity: 0.5

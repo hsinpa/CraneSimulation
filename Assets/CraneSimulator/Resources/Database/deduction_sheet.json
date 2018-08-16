@@ -1,0 +1,132 @@
+{
+	"startpoint@string_not_tide" : {
+		"text" : "未已微動拉緊吊索暫停, 扣5分",
+		"value" : 5
+	},
+	"startpoint@no_pause_at_given_height" : {
+		"text" : "荷物離地面約20公分未暫停者, 扣5分",
+		"value" : 5
+	},
+	"startpoint@bargage_leave_instantly" : {
+		"text" : "荷物急速離地, 扣10分",
+		"value" : 10
+	},
+	"startpoint@touch_examine_line" : {
+		"text" : "荷物起吊時,拖曳壓線,扣5分.",
+		"value" : 5
+	},
+	"startpoint@swing-40-80cm" : {
+		"text" : "荷物離地後,擺幅達40-80公分者,扣5分",
+		"value" : 5
+	},
+	"startpoint@swing-over-80cm": {
+		"text" : "荷物離地後, 81公分以上者,扣10分",
+		"value" : 10
+	},
+	"startpoint@red_range_before_moving" : {
+		"text" : "運行前, 荷物下緣離地面高度在高度標竿紅色範圍扣5分",
+		"value" : 5
+	},
+	"startpoint@black_range_before_moving" : {
+		"text" : "運行前, 荷物下緣離地面高度在高度標竿黑色範圍扣10分",
+		"value" : 10
+	},
+
+
+	"constraint@slight_impact" : {
+		"text" : "擦撞扣3分/次",
+		"value" : 3
+	},
+	"constraint@knock_down" : {
+		"text" : "擊倒扣5分/次",
+		"value" : 5
+	},
+	"constraint@yellow_range" : {
+		"text" : "荷物底面高度, 黃色範圍扣3分",
+		"value" : 3
+	},
+	"constraint@red_range" : {
+		"text" : "荷物底面高度, 紅色範圍扣5分",
+		"value" : 5
+	},
+	"constraint@black_range" : {
+		"text" : "荷物底面高度, 黑色範圍扣10分",
+		"value" : 10
+	},
+	"constraint@over_object_height" : {
+		"text" : "明顯超高扣10分",
+		"value" : 10
+	},
+	
+	"constraint@below_object_height" : {
+		"text" : "明顯過低扣10分",
+		"value" : 10
+	},
+
+	"movement@over_swing" : {
+		"text" : "擺幅超過60公分, 且每次來回擺盪超過3回未調整者扣5分",
+		"value" : 5
+	},
+	"movement@incorrect_control_behavior" : {
+		"text" : "同時操作3個以上操作把手或斜行及圓弧路段為同時操作2個按鈕",
+		"value" : 5
+	},
+	"movement@exceed_path" : {
+		"text" : "吊運車及荷物明顯偏離運行路線",
+		"value" : 5
+	},
+	"movement@exceed_height_50cm" : {
+		"text" : "運行高度超過50cm",
+		"value" : 5
+	},
+	"movement@bargage_touch_ground" : {
+		"text" : "吊運碰觸地",
+		"value" : 30
+	},
+	"movement@negative_control" : {
+		"text" : "逆向制動操",
+		"value" : 5
+	},
+	"movement@stop_instantly" : {
+		"text" : "急速停止",
+		"value" : 5
+	},
+
+	"ending@no_stop_before_landing"  : {
+		"text" : "荷物著地前未暫停者(離地約20cm)",
+		"value" : 5
+	},
+	"ending@bargage_touch_ground" : {
+		"text" : "急速下降撞擊地面者",
+		"value" : 10
+	},
+	"ending@touch_examine_line" : {
+		"text" : "荷物著地壓線者",
+		"value" : 5
+	},
+	"ending@wrong_landing_position"  : {
+		"text" : "荷物著地在線外者",
+		"value" : 15
+	},
+
+	"exam_fail@over_time" : {
+		"text" : "超過標準完成時間(12分鐘)",
+		"value" : "fail"
+	},
+	"exam_fail@exceed_path_meter" : {
+		"text" : "應檢人於測試中荷物運行超出運行帶一公尺",
+		"value" : "fail"
+	},
+	"exam_fail@over_swing" : {
+		"text" : "荷物擺幅超過120度",
+		"value" : "fail"
+	},
+	"exam_fail@hit_on_buildings" : {
+		"text" : "撞擊建築物或固定設施等",
+		"value" : "fail"
+	},
+	"exam_fail@move_pass_buildings" : {
+		"text" : "繞出各障礙物之直竿或從牆壁障礙物外面通過",
+		"value" : "fail"
+	}
+}
